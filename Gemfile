@@ -9,6 +9,8 @@ gem 'pg'
 
 gem 'awesome_print'
 
+gem 'heroku'
+
 group :development do
   gem "nifty-generators"
 end
