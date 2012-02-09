@@ -1,0 +1,17 @@
+<% title params[:action].titleize %>
+<% if params[:action] == "songs" %>
+  <audio controls>
+    <source src="earth-facts.mp3" type="audio/mpeg" />
+    <source src="earth_facts.ogg" type="audio/ogg" />
+  </audio>
+<% end -%>
+<% for post in @posts %>
+  <div>
+    <div><%= post.title %></div>
+    <div><%= raw(post.body) %></div>
+
+    <div><%= link_to "Show", post %></div>
+
+  </div>
+<% end %>
+

@@ -1,0 +1,20 @@
+<% content_for :custom_js do %>
+  <script src="http://js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
+  <script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script>
+<% end -%>
+<%= form_for @post do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :body %><br />
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.label :post_type %><br />
+    <%= f.select :post_type, ["news", "photo", "song"] %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
