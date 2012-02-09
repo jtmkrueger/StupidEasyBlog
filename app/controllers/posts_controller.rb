@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  http_basic_authenticate_with :name => USERNAME, :password => PASSWORD, :only => [:admin, :new, :create, :edit, :update, :destroy]
+  http_basic_authenticate_with :name => ENV['USERNAME'], :password => ENV['PASSWORD'], :only => [:admin, :new, :create, :edit, :update, :destroy]
 
   def index
     @posts = Post.all
