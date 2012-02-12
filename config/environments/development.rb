@@ -37,6 +37,6 @@ ArlissNancy::Application.configure do
 
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
-  USERNAME = 'test'
-  PASSWORD = 'changeme'
+  ENV['USERNAME'] = 'test'
+  ENV['PASSWORD'] = 'changeme'
 end

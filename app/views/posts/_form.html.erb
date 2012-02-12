@@ -16,5 +16,16 @@
     <%= f.label :post_type %><br />
     <%= f.select :post_type, ["news", "photo", "song"] %>
   </p>
+  <p class="hidden">
+    Please add a url for both file formats for browser compatibility!
+  </p>
+  <p class="hidden">
+    <%= f.label :mp3_url %>
+    <%= f.text_field :mp3_url %>
+  </p>
+  <p class="hidden">
+    <%= f.label :ogg_url %>
+    <%= f.text_field :ogg_url %>
+  </p>
   <p><%= f.submit %></p>
 <% end %>

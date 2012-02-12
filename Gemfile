@@ -11,6 +11,8 @@ gem 'awesome_print'
 
 gem 'heroku'
 
+gem 'dropbox-sdk'
+
 group :development do
   gem "nifty-generators"
 end

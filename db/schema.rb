@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120131030606) do
+ActiveRecord::Schema.define(:version => 20120212001803) do
 
   create_table "posts", :force => true do |t|
     t.string   "title"
@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(:version => 20120131030606) do
     t.string   "post_type"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.string   "mp3_url"
+    t.string   "ogg_url"
   end
 
 end

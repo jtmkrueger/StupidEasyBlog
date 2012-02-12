@@ -1,0 +1,9 @@
+/tmp
+*.orig
+*.cache
+*.log
+*.pid
+log/*.log
+.DS_Store
+.idea
+.rvmrc
